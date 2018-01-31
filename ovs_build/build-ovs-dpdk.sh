@@ -15,6 +15,7 @@ sudo apt-get update
 sudo apt-get -y --force-yes install devscripts dpkg-dev git wget dkms
 
 rm -rf ${BUILD_HOME}; mkdir -p ${BUILD_HOME}/deb
+rm -rf ${BUILD_DEST}; mkdir ${BUILD_DEST}
 
 cd ${BUILD_HOME}
 wget -c http://fast.dpdk.org/rel/dpdk-16.07.tar.xz
