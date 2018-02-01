@@ -97,6 +97,6 @@ cd ${BUILD_HOME}/deb
 tar czvf ${BUILD_DEST}/ovs-dpdk_${DEB_ARCH}.tar.gz .;
 
 cd ${BUILD_DEST}
-tar czvf dpdk_deb.tar.gz ./*.deb
+tar czvf dpdk.tar.gz ./*.deb
 
 rm -f ./*.deb
