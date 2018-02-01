@@ -95,3 +95,8 @@ debian/rules build; fakeroot debian/rules binary
 cp -r ${BUILD_HOME}/*.deb ${BUILD_HOME}/deb
 cd ${BUILD_HOME}/deb
 tar czvf ${BUILD_DEST}/ovs-dpdk_${DEB_ARCH}.tar.gz .;
+
+cd ${BUILD_DEST}
+tar czvf dpdk_deb.tar.gz ./*.deb
+
+rm -f ./*.deb
